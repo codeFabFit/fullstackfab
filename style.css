@@ -25,11 +25,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "montserra", sans-serif ;
+    font-family: "Montserra", sans-serif ;
 }
 
 /* ##### Smooth Scroll ##### */
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -55,7 +55,7 @@ background: #f1f1f1 ;
 /* ##### Reuseable CSS ##### */
 
 /* ##### Global button design ##### */
-.btn{
+.btn {
     font-weight: 500;
     padding: 12px 20px;
     background: #efefef ;
@@ -65,11 +65,11 @@ background: #f1f1f1 ;
     transition: .4s;
 }
 
-.btn>i {
+.btn > i {
     margin-left: 10px;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--second-color);
     color: var(--color-white);
 }
@@ -80,39 +80,40 @@ i{
 }
 
 /* ##### Base ##### */
-body{
+body {
     background: var(--body-color);
 }
-.container{
+.container {
     width: 100%;
     position: relative;
 }
 /* ##### Nav bar ##### */
 
-nav{
+nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 90px;
-    line-height:90px;
-    background: rgba(0, 157, 255, 0.254);
-    padding-inline:9vw ;
+    line-height: 90px;
+    /* background: rgba(0, 157, 255, 0.254); i like this color */ 
+    background: var(--body-color);
+    padding-inline: 9vw ;
     transition: .3s;
     z-index: 100;
 }
 
-.nav-logo{
+.nav-logo {
     position: relative;
 }
 
-.nav-name{
+.nav-name {
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
 }
 
-.nav-logo span{
+.nav-logo span {
     position: absolute;
     top: -15px;
     right: -20px;
@@ -129,7 +130,7 @@ nav{
     position: relative;
 }
 
-.nav_list{
+.nav_link{
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
@@ -145,13 +146,13 @@ nav{
     font-size: 28px;
     cursor: pointer;
 }
-/* ##### Container design ##### */
+/* ##### Wrapper design ##### */
 
-
-
+.wrapper {
+    height: 100vh;
+}
 
 /* ##### Featured box ##### */
-
 
 
 
@@ -159,4 +160,64 @@ nav{
 
 
 
+/* ##### Featured box ##### */
+
+
+
 /* ##### Featured image box ##### */
+
+
+
+
+/* ##### Contact box ##### */
+
+
+
+
+/* ##### Contact form ##### */
+
+
+
+/* ##### Footer box ##### */
+
+
+
+/* ##### Media Query = 1024px / responsive ##### */
+
+/* ##### Media Query = 900px / responsive ##### */
+@media only screen and (max-width: 900px) {
+    .nav-button {
+        display: none;
+    }
+
+    .nav-menu.responsive{
+        left: 0;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(212, 133, 133, 0.905);
+        /* background: rgba(255, 255, 255,0.7) ; */
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition:.3s;
+    }
+}
+    .nav_menu_list {
+        flex-direction: column;
+    }
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+/* ##### Media Query = 540px / responsive ##### */
+
