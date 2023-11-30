@@ -6,19 +6,157 @@
 /* ##### Variables ###### */
 
 :root {
-    --body-color: ;
-    --color-white:var(--color-white);
+    --body-color: rgb(250, 250, 250);
+    --color-white: rgb(255, 255, 255);
 
-    --text-color-second: ;
-    --text-color-third: ;
+    --text-color-second: rgb(68, 68,68);
+    --text-color-third: rgb(115, 180, 159);
 
-    --first-color: ;
-    --first-color-hover: ;
+    --first-color: rgb(13, 39, 98);
+    --first-color-hover: rgb(109, 162, 214);
 
 
-    --second-color: ;
-    --third-color: ;
-    --first-shadow-color: ;
-
+    --second-color: rgb(0, 250, 133);
+    --third-color: rgb(231, 118, 27);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 /* ##### Base ##### */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserra", sans-serif ;
+}
+
+/* ##### Smooth Scroll ##### */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ##### Change the scroll bar design  ##### */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track{
+background: #f1f1f1 ;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ccc ;
+    border-radius: 30px;
+    }
+
+::-webkit-scrollbar-thumb:hover{
+        background: #bbb ;
+        }
+
+/* ##### Reuseable CSS ##### */
+
+/* ##### Global button design ##### */
+.btn{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn>i {
+    margin-left: 10px;
+}
+
+.btn:hover{
+    background: var(--second-color);
+    color: var(--color-white);
+}
+/* ##### Global icon design ##### */
+
+i{
+    font-size: 16px;
+}
+
+/* ##### Base ##### */
+body{
+    background: var(--body-color);
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+/* ##### Nav bar ##### */
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    line-height:90px;
+    background: rgba(0, 157, 255, 0.254);
+    padding-inline:9vw ;
+    transition: .3s;
+    z-index: 100;
+}
+
+.nav-logo{
+    position: relative;
+}
+
+.nav-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color-third);
+}
+
+.nav-logo span{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    font-size: 5em;
+    color: var(--text-color-second);
+}
+
+.nav-menu, .nav_menu_list {
+    display: flex;
+}
+
+.nav-menu .nav_list{
+    list-style: none;
+    position: relative;
+}
+
+.nav_list{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
+}
+
+.nav-menu-btn{
+    display: none;
+}
+
+.nav-menu-btn i {
+    font-size: 28px;
+    cursor: pointer;
+}
+/* ##### Container design ##### */
+
+
+
+
+/* ##### Featured box ##### */
+
+
+
+
+/* ##### Featured Box text ##### */
+
+
+
+/* ##### Featured image box ##### */
