@@ -24,12 +24,14 @@ function headerShadow (){
         navHeader.style.lineHeight = "70px";
 
     } else {
+
         navHeader.style.boxShadow = "none";
         navHeader.style.height = "90px";
-        navHeader.style.lineHeight = "70px";
+        navHeader.style.lineHeight = "90px";
     }
-
 }
+
+
 
 
 /* ##### Typing Effect ##### */
