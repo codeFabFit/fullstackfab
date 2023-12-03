@@ -3,8 +3,8 @@
 
 /* ----- VARIABLES ----- */
 :root{
-    --body-color: rgb(255, 255, 255);
-    --color-white: rgb(223, 221, 221);
+    --body-color: rgb(139, 143, 117);
+    --color-white: rgb(189, 186, 186);
 
     --text-color-second: rgb(37, 36, 36);
     --text-color-third: rgba(12, 99, 107, 0.751);
@@ -12,8 +12,8 @@
     --first-color: rgb(44, 18, 177);
     --first-color-hover: rgb(78, 106, 173);
 
-    --second-color: rgb(94, 196, 224);
-    --third-color: rgb(75, 57, 193);
+    --second-color: rgb(23, 47, 54);
+    --third-color: rgb(54, 3, 182);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
@@ -148,7 +148,23 @@ nav{
     border-radius: 50%;
 }
 
+.active-link{
+    position: relative;
+    color: var(--first-color);
+    transition: .3;
+}
 
+.active-link::after {
+    content:'';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 5px;
+    background: var(--first-color);
+    border:50%;
+}
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
     padding-inline: 10vw;
